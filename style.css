@@ -52,6 +52,10 @@ nav .cart-shop a i{
     padding-left: .5rem;
 }
 
+nav .cart-shop a i span{
+    font-size: 1rem;
+}
+
 /*tarjetas de productos*/
 .productos{
     display: grid;
@@ -115,13 +119,18 @@ nav .cart-shop a i{
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
+    border:solid 2px #3B3030;
     margin: auto 1rem;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #F0EBE3;
     text-align: center;
 }
-
+.productos .card .contador-producto .cart-control p{
+    display: flex;
+    margin: .5rem auto;
+    align-items: center;
+    justify-content: center;
+}
 
 .productos .card .contador-producto button{
     display: flex;
@@ -163,4 +172,13 @@ nav .cart-shop a i{
     width: 10rem;
     font-family: "Roboto", system-ui;
     border-radius: 20px;
-}    
+}   
+
+.productos .card .add-button button:hover{
+    transition: .3s;
+    background-color: #7a5a5a;
+}
+.productos .card .add-button button:active{
+    transition: .3s;
+    background-color: #3f3333;
+}
